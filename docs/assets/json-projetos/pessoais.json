@@ -1,0 +1,62 @@
+[
+    {
+        "title": "gerarqrcode: Gerador de QR Code ",
+        "period": "09/2024 - 09/2024",
+        "description": "Um projeto simples de criação de qr code para uso pessoal.",
+        "image": "assets/images/gerarqrcode.png",
+        "links": [
+            {
+                "url": "https://github.com/lucasdwn/next-qrcode",
+                "icon": "fab fa-github"
+            },
+            {
+                "url": "https://gerarqrcode.vercel.app/",
+                "icon": "fas fa-link"
+            }
+        ]
+    },
+    {
+        "title": "CRUD Marvel: Categorização de personagens da Marvel.",
+        "period": "08/2022 - 08/2022",
+        "description": "O projeto CRUD Marvel foi desenvolvido para categorizar personagens da Marvel, permitindo o cadastro, edição e organização de personagens em categorias.",
+        "image": "assets/images/apimarvel.png",
+        "links": [
+            {
+                "url": "https://github.com/lucasdwn/Testetecnico-Ionic",
+                "icon": "fab fa-github"
+            },
+            {
+                "url": "https://youtu.be/kx1ZWYQvQNw",
+                "icon": "fab fa-youtube"
+            }
+        ]
+    },
+    {
+        "title": "IgniteLab: Plataforma de eventos.",
+        "period": "06/2022 - 06/2022",
+        "description": "Um projeto desenvolvido no evento IgniteLab da Rocketseat, tem como objetivo ser uma plataforma para exibição de vídeos de eventos, permitindo a listagem e organização de conteúdos de forma prática.",
+        "image": "assets/images/ignitelab.png",
+        "links": [
+            {
+                "url": "https://github.com/lucasdwn/ReactJs-IgniteLab",
+                "icon": "fab fa-github"
+            }
+        ]
+    },
+    {
+        "title": "My-Stock: Estoque de produtos.",
+        "period": "05/2022 - 06/2022",
+        "description": "Um projeto simples que tem como objetivo desenvolver um sistema para gerenciamento de estoque e produtos, permitindo o cadastro, atualização e controle de itens de forma simples e eficiente.",
+        "image": "assets/images/mystock.png",
+        "links": [
+            {
+                "url": "https://github.com/lucasdwn/Desafio-Full-Stack-Developer",
+                "icon": "fab fa-github"
+            },
+            {
+                "url": "https://youtu.be/-tT0WixFo9c?si=UfoQHY90dAbgkcgB",
+                "icon": "fab fa-youtube"
+            }
+        ]
+    }
+]

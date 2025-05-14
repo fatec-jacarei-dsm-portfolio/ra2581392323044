@@ -1,0 +1,44 @@
+[
+    {
+        "title": "List-tasks: Criação de listas, tarefas e subtarefas personalizadas.",
+        "period": "09/2024 - 10/2024",
+        "course": "Laboratório de Desenvolvimento Web",
+        "description": "O projeto tem como objetivo criar um gerenciador de tarefas, permitindo aos usuários organizar, criar e compartilhar listas e subtarefas, com recursos como anexos e definição de prioridades. Desenvolvido com Node.js, Next.js, TypeScript, MongoDB, TailwindCSS, e utilizando bucket S3 e CloudFront da AWS, a aplicação facilita o planejamento e execução de atividades diárias pessoais e profissionais.",
+        "image": "assets/images/List-tasks.png",
+        "links": [
+            {
+                "url": "https://github.com/lucasdwn/atv2-ldw3-documentation",
+                "icon": "fab fa-github"
+            },
+            {
+                "url": "https://youtu.be/7EGj-Smv1WI",
+                "icon": "fab fa-youtube"
+            },
+            {
+                "url": "https://list-tasks.lucasdwn.dev/",
+                "icon": "fas fa-link"
+            }
+        ]
+    },
+    {
+        "title": "Primeiro portfolio.",
+        "period": "09/2021 - 12/2021",
+        "course": "Design Digital",
+        "description": "Meu primeiro portfolio criado para a matéria de Design Digital na Fatec São José dos Campos",
+        "image": "assets/images/primeiro-portfolio.png",
+        "links": [
+            {
+                "url": "https://github.com/lucasdwn/Portfolio_DesignDigital_Fatec",
+                "icon": "fab fa-github"
+            },
+            {
+                "url": "https://youtu.be/KIQzv4AG-qM?si=Zeh8AhlvSh-r5vVR",
+                "icon": "fab fa-youtube"
+            },
+            {
+                "url": "https://lucasdwn-portfolio.vercel.app/ ",
+                "icon": "fas fa-link"
+            }
+        ]
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "title": "Da Vinci Care:  Acompanhar as dietas e metas calóricas",
+        "period": "08/2024 - 11/2024",
+        "course": "FATEC JAC - 4º Semestre",
+        "description": "O projeto visa criar um aplicativo de dietas personalizadas e predefinidas, adaptadas para diferentes faixas etárias, com funcionalidades como checklist diário de alimentos, cálculo automático de calorias e a possibilidade de adicionar novos itens, oferecendo uma experiência prática e personalizada para os usuários.",
+        "image": "assets/images/abp-davincicare.png",
+        "links": [
+            {
+                "url": "https://github.com/Our-time-Fatec/API-2024_2-Documentacao",
+                "icon": "fab fa-github"
+            },
+            {
+                "url": "https://youtu.be/pB60DNAYRf8",
+                "icon": "fab fa-youtube"
+            }
+        ]
+    },
+    {
+        "title": "Bicicreta: Aluguel de bicicletas",
+        "period": "09/2023 - 11/2023",
+        "course": "FATEC JAC - 2º Semestre",
+        "description": "O projeto tem como objetivo criar uma plataforma para facilitar o aluguel de bicicletas, conectando locadores e locatários. Os usuários poderão anunciar suas bicicletas para aluguel, buscar por bicicletas disponíveis no sistema e realizar avaliações, contribuindo para um sistema de reputação que beneficia tanto locadores quanto locatários, promovendo confiança e praticidade na utilização do serviço.",
+        "image": "assets/gifs/abp-bicicreta.gif",
+        "links": [
+            {
+                "url": "https://github.com/Our-time-Fatec/API-2023_2-Documentacao",
+                "icon": "fab fa-github"
+            }
+        ]
+    },
+    {
+        "title": "UOLshop: Site de venda cruzada (Cross-Selling)",
+        "period": "08/2022 - 11/2022",
+        "course": "FATEC SJC - 3º Semestre",
+        "description": "O projeto UOLshop foi desenvolvido como um site de vendas com foco em Cross-Selling, recomendando produtos relacionados ao cliente durante a visualização de itens. A solução foi criada em parceria com a UOL.",
+        "image": "assets/images/api-uolshop.png",
+        "links": [
+            {
+                "url": "https://github.com/Group-NoName/noname-documentacoes",
+                "icon": "fab fa-github"
+            }
+        ]
+    },
+    {
+        "title": "IONICRH: Gerenciamento de recursos humanos.",
+        "period": "03/2022 - 06/2022",
+        "course": "FATEC SJC - 2º Semestre",
+        "description": "O projeto visa desenvolver um sistema para apoiar os setores de Recursos Humanos e Departamento Pessoal, automatizando o cadastro de colaboradores (CLT ou PJ), gerenciando documentação e dados de forma segura e em conformidade com a LGPD, com o objetivo de melhorar processos administrativos e controlar talentos da empresa.",
+        "image": "assets/gifs/api-ionicrh.gif",
+        "links": [
+            {
+                "url": "https://github.com/excalibur-coders/IONICRH",
+                "icon": "fab fa-github"
+            }
+        ]
+    },
+    {
+        "title": "FATEC SJC: Portal de Informações.",
+        "period": "09/2021 - 12/2021",
+        "course": "FATEC SJC - 1º Semestre",
+        "description": "O projeto consiste no desenvolvimento de um portal de informações para a FATEC São José dos Campos, criado para melhorar a comunicação interna entre docentes, discentes e administrativos. Ele permite exibir e gerar avisos gerais ou específicos de forma seletiva e controlada, respeitando hierarquias dentro da instituição, como solução para problemas de perda de informações no ensino remoto durante a pandemia.",
+        "image": "assets/images/api-fatecsjc.png",
+        "links": [
+            {
+                "url": "https://github.com/Monkey-Type/API-DSM",
+                "icon": "fab fa-github"
+            },
+            {
+                "url": "https://youtu.be/8YvyjXUGCVI",
+                "icon": "fab fa-youtube"
+            }
+        ]
+    }
+]

@@ -1,0 +1,152 @@
+/* Container dos Projetos */
+.projects-grid {
+    display: flex; /* Muda de grid para flex */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    justify-content: center; /* Espaçamento entre os itens */
+    gap: 1rem; /* Espaço entre os cards */
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Cartão do Projeto */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Deixe a altura flexível */
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-basis: calc(33.33% - 1rem); /* Largura de 3 itens por linha */
+    /* No mobile, a largura dos itens será ajustada */
+}
+
+/* Imagem do Projeto */
+.project-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Conteúdo do Projeto */
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Para garantir que o conteúdo não sobreponha */
+}
+
+/* Título e Período */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.project-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.project-period {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Descrição */
+.project-description {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-height: 5em;  /* Limita altura da descrição */
+    overflow-y: auto;  /* Exibe o scroll quando necessário */
+    padding-right: 8px;
+    position: relative; /* Para que o scroll funcione corretamente */
+    margin-bottom: 10px; /* Espaçamento entre a descrição e os links */
+}
+
+/* Estilização do Scroll */
+.project-description::-webkit-scrollbar {
+    width: 6px; /* Largura da barra */
+}
+
+.project-description::-webkit-scrollbar-thumb {
+    background-color: #5865F2; /* Cor do botão de rolagem */
+    border-radius: 3px;
+}
+
+.project-description::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Cor do fundo da barra */
+}
+
+/* Links do Projeto */
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: auto; /* Garante que os links fiquem no fundo do cartão */
+}
+
+.project-links a {
+    font-size: 1.5rem;
+    color: #ffb6b9;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-links a:hover {
+    transform: scale(1.1);
+    color: #5865F2
+}
+
+.project-course {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividade - Tablets e Celulares */
+@media (max-width: 1024px) {
+    .project-card {
+        flex-basis: calc(50% - 1rem); /* 2 itens por linha em telas médias (tablets) */
+    }
+}
+
+@media (max-width: 600px) {
+    .project-card {
+        flex-basis: 100%; /* 1 item por linha em telas pequenas (celulares) */
+    }
+}
+
+.projects-group {
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.projects-title {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.projects-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projects-subgroup{
+    margin-bottom: 1rem;
+} 
+
+.projects-subgroup.abp{
+    border-bottom: 0.5px solid gray;
+}

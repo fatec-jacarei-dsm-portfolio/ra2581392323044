@@ -1,0 +1,287 @@
+/* Padronização projeto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    min-height: 100vh;
+    background: #1a1a1a;
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    width: 300px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.content {
+    margin-left: 300px;
+    flex: 1;
+    padding: 20px;
+    max-width: 100vw;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* Itens de Perfil */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solidrgb(216, 10, 10);
+}
+
+.profile-name {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.profile-status {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.profile-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+.text {
+    display: flex;
+    align-items: flex-start;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+#age {
+    margin-right: 0.2rem;
+}
+
+.profile-info.birthday i {
+    color: #f7b500;
+}
+
+.profile-info.location i {
+    color: #3b82f6;
+}
+
+.profile-info.email i {
+    color: #ea4335;
+}
+
+.profile-info.discord i {
+    color: #5865F2;
+}
+
+/* Itens de Menu */
+.nav-menu {
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;              
+    justify-content: center;    
+    flex-direction: column;
+    padding: 0;
+}
+
+.nav-item {
+    margin-bottom: 1rem;
+    text-align: center;         
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link i {
+    color: white;               
+    font-size: 20px;
+    margin-right: 0.8rem;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.nav-link span {
+    margin-left: 0.8rem;
+    color: #b0b0b0;
+}
+
+.nav-link:hover span {
+    color: #ffffff;
+}
+
+.nav-link:hover i {
+    color: #ffffff;
+}
+
+/* Icons Redes Sociais */
+
+.social-icons {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link i {
+    font-size: 24px;
+    color: white; 
+    transition: color 0.3s ease; 
+}
+
+.social-link:hover i.fa-github {
+    color: #000000; 
+}
+
+.social-link:hover i.fa-linkedin {
+    color: #0077b5;
+}
+
+.social-link:hover i.fa-youtube {
+    color: #ff0000; 
+}
+
+.social-link:hover i.fa-x-twitter {
+    color: #1da1f2;
+}
+/* Responsividade para dispositivos móveis */
+@media (max-width: 800px) {
+    /* Sidebar fechada por padrão */
+    .sidebar {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        background-color: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+        transform: translateX(-100%); /* Sidebar oculta */
+        transition: transform 0.3s ease;
+        z-index: 1
+    }
+
+    /* Navbar fixa com ícone de hamburger */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2rem;
+        z-index: 2; 
+        background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .sidebar-toggle {
+        position: absolute;
+        left: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .social-icons {
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .profile-info {
+        font-size: 0.85rem;
+    }
+
+    /* Exibir a sidebar quando estiver aberta */
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    /* Esconde o conteúdo da sidebar quando fechada */
+    .content {
+        margin-left: 0; 
+        margin-top: 2rem;
+    }
+
+    /* Exibe o conteúdo com margem quando a sidebar está aberta */
+    .sidebar.open + .content {
+        margin-left: 250px; /* Coloca a margem quando a sidebar está aberta */
+    }
+    
+}
+
+/* Para telas maiores, mantemos a sidebar visível */
+@media (min-width: 801px) {
+    .sidebar {
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+        transform: translateX(0); /* Sempre visível */
+    }
+
+    .sidebar-toggle {
+        display: none; /* Esconde o botão em telas grandes */
+    }
+
+    /* O conteúdo mantém a margem para a sidebar em telas grandes */
+    .content {
+        margin-left: 300px;
+    }
+}

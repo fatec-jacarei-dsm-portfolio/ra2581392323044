@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Post LinkedIn: List-tasks",
+        "period": "13/08/2024",
+        "description": "Trata-se de uma plataforma onde o usuário pode criar listas personalizadas, adicionar tarefas, subtarefas, definir prioridades e compartilhar suas listas com outros usuários, oferecendo permissões de edição.",
+        "image": "assets/images/List-tasks.png",
+        "links": [
+            {
+                "url": "https://www.linkedin.com/posts/activity-7251238021461663744-CM3M?utm_source=share&utm_medium=member_desktop&rcm=ACoAADck1JkBhl_-jsZg9eJQmbJCyZrgPYkh_vY",
+                "icon": "fab fa-linkedin"
+            }
+        ]
+    },
+    {
+        "title": "TUTORIAL: Deploy .NET WebAPI grátis no RailwayApp utilizando Docker!",
+        "period": "27/02/2024",
+        "description": "É um tutorial básico onde ensino criar o projeto, adicionar suporte a docker, realizar o deploy e testar. Minha motivação ao criar este tutorial foi por estar buscando hospedagens gratuitas para projetos .NET alternativas ao Azure.",
+        "image": "assets/images/dotnetdocker.jpg",
+        "links": [
+            {
+                "url": "https://www.linkedin.com/posts/activity-7168749208487747584-U4cc?utm_source=share&utm_medium=member_desktop&rcm=ACoAADck1JkBhl_-jsZg9eJQmbJCyZrgPYkh_vY",
+                "icon": "fab fa-linkedin"
+            },
+            {
+                "url": "https://dev.to/lucasdwn/como-publicar-uma-webapi-net-no-railwayapp-utilizando-docker-1ok4",
+                "icon": "fab fa-dev"
+            }
+        ]
+    }
+]

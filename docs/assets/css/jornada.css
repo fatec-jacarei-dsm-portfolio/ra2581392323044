@@ -1,0 +1,122 @@
+
+/* Timeline Styles */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+/* Linha vertical da timeline */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+/* Grupo de cada seção */
+.timeline-group {
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+}
+
+/* Ícone da timeline */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.25rem;
+    top: 1rem;
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--accent);
+}
+
+/* Estilização do título de cada seção */
+.group-title {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilização dos itens da timeline */
+.timeline-item {
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.timeline-item:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-3px);
+}
+
+/* Cabeçalho de cada item */
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilização do período */
+.period {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Estilização do cargo e curso */
+.course,
+.role {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Descrição */
+.description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Nome da faculdade */
+.timeline-header h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+/* Nome do curso */
+.course {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .timeline-group {
+        width: 100%;
+        padding: 1rem;
+    }
+    .timeline {
+        padding-left: 0.5rem;
+    }
+    
+}
