@@ -56,4 +56,22 @@ $(document).ready(function () {
 
     let dataNascimento = "2003-04-08";
     $("#age").text(calcularIdade(dataNascimento));
+
+    $('.open-modal').click(function(e) {
+        e.preventDefault();
+        $(this).closest('.project-card').find('.modal').fadeIn();
+    });
+
+    $('.close-modal').click(function() {
+        $(this).closest('.modal').fadeOut();
+    });
+
+    $(window).click(function(e) {
+        $('.modal').each(function() {
+            if (e.target === this) {
+                $(this).fadeOut();
+            }
+        });
+    });
+
 });
